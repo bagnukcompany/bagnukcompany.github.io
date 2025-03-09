@@ -1,48 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Теплицы BangukCompany</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>BangukCompany</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#projects">Наши проекты</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contact">Связаться</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Showcasing my best work and projects</p>
-        </section>
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="assets/background.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="hero-text">
+            <h2>Теплицы премиального класса</h2>
+            <p>Идеальные условия для роста ваших растений</p>
+        </div>
+    </section>
 
-        <section class="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <div class="project-item">
-                    <h3>Project 1</h3>
-                    <p>Short description of the project.</p>
-                    <a href="projects/project1.html">View Details</a>
-                </div>
-                <div class="project-item">
-                    <h3>Project 2</h3>
-                    <p>Short description of the project.</p>
-                    <a href="projects/project2.html">View Details</a>
-                </div>
-            </div>
-        </section>
-    </main>
+    <section id="projects" class="projects">
+        <h2>Наши проекты</h2>
+        <div class="project-list">
+            <div class="project-item">Проект 1</div>
+            <div class="project-item">Проект 2</div>
+            <div class="project-item">Проект 3</div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <h2>Отзывы</h2>
+        <div class="review-item">"Отличное качество!" – Иван</div>
+        <div class="review-item">"Очень надежные конструкции!" – Мария</div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Связаться с нами</h2>
+        <form>
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш Email" required>
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2025 BangukCompany. Все права защищены.</p>
     </footer>
 </body>
 </html>

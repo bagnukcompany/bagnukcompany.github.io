@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: gold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid gold;
+    border-radius: 10px;
+}
+.contact {
+    margin-top: 20px;
+    font-size: 18px;
+}
