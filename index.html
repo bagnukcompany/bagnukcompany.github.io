@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>BangukCompany</h1>
+        <div class="logo">BangukCompany</div>
         <nav>
             <ul>
                 <li><a href="#projects">Наши проекты</a></li>
@@ -25,38 +25,69 @@
             Ваш браузер не поддерживает видео.
         </video>
         <div class="hero-text">
-            <h2>Теплицы премиального класса</h2>
-            <p>Идеальные условия для роста ваших растений</p>
+            <h1>Теплицы премиального класса</h1>
+            <p>Идеальные условия для роста ваших растений в любое время года</p>
+            <a href="#contact" class="cta-button">Заказать теплицу</a>
         </div>
     </section>
 
     <section id="projects" class="projects">
         <h2>Наши проекты</h2>
-        <div class="project-list">
-            <div class="project-item">Проект 1</div>
-            <div class="project-item">Проект 2</div>
-            <div class="project-item">Проект 3</div>
+        <div class="project-grid">
+            <div class="project-item">
+                <img src="assets/project1.jpg" alt="Проект 1">
+                <h3>Теплица для фермерского хозяйства</h3>
+                <p>Современные теплицы с автоматической системой полива и климат-контролем.</p>
+            </div>
+            <div class="project-item">
+                <img src="assets/project2.jpg" alt="Проект 2">
+                <h3>Индивидуальные теплицы</h3>
+                <p>Индивидуальный подход к каждому клиенту. Полная защита от холода и перегрева.</p>
+            </div>
+            <div class="project-item">
+                <img src="assets/project3.jpg" alt="Проект 3">
+                <h3>Промышленные теплицы</h3>
+                <p>Теплицы для бизнеса. Полная автоматизация и высокая энергоэффективность.</p>
+            </div>
         </div>
     </section>
 
     <section id="reviews" class="reviews">
-        <h2>Отзывы</h2>
-        <div class="review-item">"Отличное качество!" – Иван</div>
-        <div class="review-item">"Очень надежные конструкции!" – Мария</div>
+        <h2>Отзывы наших клиентов</h2>
+        <div class="review-container">
+            <div class="review-item">
+                <p>"BangukCompany построили для нас отличную теплицу! Все работает идеально!"</p>
+                <span>- Иван Петров, фермер</span>
+            </div>
+            <div class="review-item">
+                <p>"Очень довольны качеством материалов и быстрой установкой. Спасибо!"</p>
+                <span>- Мария Смирнова, владелец хозяйства</span>
+            </div>
+            <div class="review-item">
+                <p>"Эти теплицы выдерживают любые погодные условия. Надежность на высшем уровне!"</p>
+                <span>- Алексей Ковалев, предприниматель</span>
+            </div>
+        </div>
     </section>
 
     <section id="contact" class="contact">
         <h2>Связаться с нами</h2>
+        <p>Оставьте заявку, и мы поможем вам выбрать идеальную теплицу</p>
         <form>
             <input type="text" name="name" placeholder="Ваше имя" required>
             <input type="email" name="email" placeholder="Ваш Email" required>
             <textarea name="message" placeholder="Ваше сообщение" required></textarea>
-            <button type="submit">Отправить</button>
+            <button type="submit">Отправить заявку</button>
         </form>
     </section>
 
     <footer>
         <p>&copy; 2025 BangukCompany. Все права защищены.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Telegram</a>
+        </div>
     </footer>
 </body>
 </html>
